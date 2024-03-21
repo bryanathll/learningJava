@@ -1,4 +1,4 @@
-public class Task {
+public class arithmetic {
     public static void main(String[] args) {
         /* deklarasi variabel dan tipe data untuk
          bilangan1, bilangan2, hasil penjumlahan
