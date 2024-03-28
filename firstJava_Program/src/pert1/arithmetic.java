@@ -1,3 +1,4 @@
+package pert1;
 public class arithmetic {
     public static void main(String[] args) {
         /* deklarasi variabel dan tipe data untuk
