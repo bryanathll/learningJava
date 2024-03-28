@@ -1,3 +1,4 @@
+package pert2;
 public class luas_lingkaran {
     public static void main(String[] args) {
         double luas, pi;
