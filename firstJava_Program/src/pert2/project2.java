@@ -7,6 +7,7 @@ public class project2 {
         String nama, alamat;
         int umur;
         char gender;
+        double nilai;
 
         Scanner ketik=new Scanner(System.in);
 
@@ -17,8 +18,10 @@ public class project2 {
         alamat = ketik.nextLine();
         System.out.print("Input Umur: ");
         umur = ketik.nextInt();
-        System.out.println("Input gender: ");
+        System.out.print("Input gender: ");
         gender = ketik.next().charAt(0);
+        System.out.print("Input nilai mahasiswa: ");
+        nilai = ketik.nextDouble();
 
 
         System.out.println();
@@ -27,5 +30,6 @@ public class project2 {
         System.out.println("Alamat yang diinput: "+ alamat);
         System.out.println("Umur yang diinput: "+ umur +" Tahun");
         System.out.println("Gender yang diinput: "+ gender);
+        System.out.println("Nilai yang diinput: "+ nilai);
     }    
 }
