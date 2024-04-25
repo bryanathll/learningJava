@@ -10,6 +10,7 @@ public class operatorTernary {
 
         //menampilkan jawaban
         System.out.println("kamu suka saya: "+jawaban);
+        
     }
     
 }
