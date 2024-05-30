@@ -13,19 +13,19 @@ public class PerhitunganNilai {
 
         // ============ Input Nilai UPB ============ 
         System.out.println("=========== Masukkan Nilai Mahasiswa UPB (===========");
-        System.out.println("Masukkan Nama");
+        System.out.print("Masukkan Nama                   :");
         nama = input.nextLine();
-        System.out.println("Masukkan NIM");
+        System.out.print("Masukkan NIM                    :");
         nim = input.nextLine();
-        System.out.println("Masukkan Nilai Kehadiran");
+        System.out.print("Masukkan Nilai Kehadiran        :");
         n_absen = input.nextInt();
-        System.out.println("Masukkan Nilai Tugas Struktur");
+        System.out.print("Masukkan Nilai Tugas Struktur   :");
         n_ts = input.nextInt();
-        System.out.println("Masukkan Nilai UTS");
+        System.out.print("Masukkan Nilai UTS              :");
         n_uts = input.nextInt();
-        System.out.println("Masukkan Nilai UAS");
+        System.out.print("Masukkan Nilai UAS              :");
         n_uas = input.nextInt();
-        System.out.println("Masukkan Nilai Tugas Mandiri");
+        System.out.print("Masukkan Nilai Tugas Mandiri    :");
         n_tm = input.nextInt();
         // ============ Input Nilai UPB end ============
 
@@ -47,7 +47,12 @@ public class PerhitunganNilai {
 
         
         if (grade == 'A'|| grade =='B' || grade =='C'){
-            System.out.println("\nMahasiswa dengan nama: " + nama + "\nNIM: " + nim + "\nMemiliki Nilai akhir: " + n_akhir + "\ndengan grade: " + grade + "\nDinyatakan lulus!!!");
+            System.out.println(
+                "\nMahasiswa dengan nama  : " + nama + 
+                "\nNIM                    : " + nim + 
+                "\nMemiliki Nilai akhir   : " + n_akhir + 
+                "\ndengan grade           : " + grade + 
+                "\nDinyatakan lulus!!!");
         }
         else {
             System.out.println("\nMahasiswa dengan nama" + nama + "\nNIM: " + nim + "\nMemiliki Nilai akhir: " + n_akhir + "\ndengan grade: " + grade + "\nDinyatakan Tidak Lulus!!!");
