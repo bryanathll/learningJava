@@ -19,6 +19,13 @@ public class PerhitunganNilai {
         nim = input.nextLine();
         System.out.print("Masukkan Nilai Kehadiran        :");
         n_absen = input.nextInt();
+        // ============ Input Nilai UPB end ============
+        if(n_absen <=70){
+            System.out.println("\nMahasiswa dengan nama: " + nama + "\nNIM: " + nim + "\nMendapatkan Nilai F");
+            return;
+        };
+
+        input.nextLine(); // Consume the newline left-over
         System.out.print("Masukkan Nilai Tugas Struktur   :");
         n_ts = input.nextInt();
         System.out.print("Masukkan Nilai UTS              :");
@@ -27,7 +34,6 @@ public class PerhitunganNilai {
         n_uas = input.nextInt();
         System.out.print("Masukkan Nilai Tugas Mandiri    :");
         n_tm = input.nextInt();
-        // ============ Input Nilai UPB end ============
 
         // ============ Kondisi if else ============
         n_akhir = (0.10*n_absen + 0.10*n_ts + 0.15*n_tm + 0.30*n_uts + 0.35*n_uas);
@@ -53,6 +59,7 @@ public class PerhitunganNilai {
                 "\nMemiliki Nilai akhir   : " + n_akhir + 
                 "\ndengan grade           : " + grade + 
                 "\nDinyatakan lulus!!!");
+
         }
         else {
             System.out.println("\nMahasiswa dengan nama" + nama + "\nNIM: " + nim + "\nMemiliki Nilai akhir: " + n_akhir + "\ndengan grade: " + grade + "\nDinyatakan Tidak Lulus!!!");
