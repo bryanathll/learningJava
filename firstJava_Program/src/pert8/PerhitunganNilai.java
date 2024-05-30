@@ -20,12 +20,15 @@ public class PerhitunganNilai {
         System.out.print("Masukkan Nilai Kehadiran        :");
         n_absen = input.nextInt();
         // ============ Input Nilai UPB end ============
+
+        // cek kondisi jika nilai kehadiran kurang dari 70
         if(n_absen <=70){
             System.out.println("\nMahasiswa dengan nama: " + nama + "\nNIM: " + nim + "\nMendapatkan Nilai F");
             return;
         };
 
-        input.nextLine(); // Consume the newline left-over
+        // membuat baris baru yang tersisa
+        input.nextLine();
         System.out.print("Masukkan Nilai Tugas Struktur   :");
         n_ts = input.nextInt();
         System.out.print("Masukkan Nilai UTS              :");
