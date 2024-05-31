@@ -12,7 +12,7 @@ public class PerhitunganNilai {
         // ============ variable end ============
 
         // ============ Input Nilai UPB ============ 
-        System.out.println("=========== Masukkan Nilai Mahasiswa UPB (===========");
+        System.out.println("=========== Masukkan Nilai Mahasiswa UPB ===========");
         System.out.print("Masukkan Nama                   :");
         nama = input.nextLine();
         System.out.print("Masukkan NIM                    :");
@@ -22,7 +22,7 @@ public class PerhitunganNilai {
         // ============ Input Nilai UPB end ============
 
         // cek kondisi jika nilai kehadiran kurang dari 70
-        if(n_absen <=70){
+        if(n_absen <70){
             System.out.println("\nMahasiswa dengan nama: " + nama + "\nNIM: " + nim + "\nMendapatkan Nilai F");
             return;
         };
@@ -65,7 +65,11 @@ public class PerhitunganNilai {
 
         }
         else {
-            System.out.println("\nMahasiswa dengan nama" + nama + "\nNIM: " + nim + "\nMemiliki Nilai akhir: " + n_akhir + "\ndengan grade: " + grade + "\nDinyatakan Tidak Lulus!!!");
+            System.out.println("\nMahasiswa dengan nama : " + nama + 
+                               "\nNIM                   : " + nim + 
+                               "\nMemiliki Nilai akhir  : " + n_akhir + 
+                               "\ndengan grade          : " + grade + 
+                               "\nDinyatakan Tidak Lulus!!!");
             }
             
     }
